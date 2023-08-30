@@ -1,0 +1,101 @@
+
+ 
+
+    a {
+
+     text-decoration: none;
+     color: #fff;
+ }
+
+ a:hover {
+
+     color: rgb(203, 197, 189);
+ }
+
+ header {
+
+     font-family: 'Poppins', sans-serif
+ }
+
+ section {
+
+     font-family: 'Poppins', sans-serif;
+ }
+
+ section h1 {
+
+     font-size: 17px;
+ }
+
+
+ 
+ /* Redimensionner le LOGO */ 
+
+ header img {
+
+      height: 90px;
+      width: 110px;
+}
+
+/* Bar de navigation du site */ 
+
+  nav ul li a{
+
+     display: flex;
+     flex-wrap: wrap;
+     text-align: center;
+     padding: 12px;
+     font-size: 15px;
+  }
+   nav ul li a:hover
+    {
+         background-color: rgb(96, 96, 148);
+         transition: all 0.31s;
+         border-radius: 3px;
+    }
+
+
+    /* Bouton d'animation */
+
+    .btn-anim {
+        padding: 10px 20px;
+        background-color: #417550;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .btn-anim::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.3);
+        transition: left 0.5s ease-in-out;
+    }
+    
+    .btn-anim:hover::before {
+        left: 0;
+    }
+    
+
+    /* formulaire a modif */ 
+
+     form input {
+
+         padding: 12px;
+        color: #000000;
+        font-size: 15px;
+     }
+
+
+
+ /* corps du site */ 
+
+   

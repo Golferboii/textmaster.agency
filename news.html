@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Contactez-nous </title>
+  <link rel="stylesheet" href="tma.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <header class="bg-gray-900 text-white">
+    <div class="container mx-auto py-4 flex justify-between items-center">
+      <nav>
+        <ul class="flex space-x-6">
+           <a href="C:\Users\HP\Documents\SITEagency\index.html"> < BACK </a>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bg-blue-500 text-white py-24">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold mb-4"> Contactez-nous</h1><br>
+      <p class="text-lg mb-8"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;<i>textmaster.agency@gmail.com</i></p>
+      <p class="text-lg mb-8"><i class="fa-brands fa-instagram"></i></i>&nbsp;&nbsp;<i>@textmaster.agency</i></p>
+      <p class="text-lg mb-8"><i class="fa-brands fa-whatsapp"></i></i>&nbsp;&nbsp;<i>0710413819 / 0788729838</i></p>
+    </div>
+  </section>
+  
+  <section id="mapSection" class="py-24">
+    <!-- Le code de notre google map -->
+  </section>
+
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto flex justify-center items-center">
+      <ul class="flex space-x-4">
+        <li><a href="#" class="text-white hover:text-gray-300"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Script de message de succès ! -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/6.0.0-beta2/js/all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      // Effet de défilement fluide
+
+      $('a').on('click', function (event) {
+        if (this.hash !== '') {
+          event.preventDefault();
+          const hash = this.hash;
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            800,
+            function () {
+              window.location.hash = hash;
+            }
+          );
+        }
+      });
+
+      // Soumettre le formulaire et afficher le message de succès !
+
+      $('#contactForm').submit(function (event) {
+        event.preventDefault();
+
+        // Perform form validation and submission using AJAX
+        // Show success message or error message based on response
+        // Reset form fields
+        
+      });
+    });
+  </script>
+</body>
+
+</html>
